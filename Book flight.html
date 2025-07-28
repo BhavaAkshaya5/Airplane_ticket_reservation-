@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Book a Flight</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #eef6ff;
+    }
+    header {
+      background: url('https://www.pngall.com/wp-content/uploads/8/Travel-PNG-Image-File.png') center/cover no-repeat;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 6px black;
+    }
+    header h1 {
+      font-size: 36px;
+    }
+    form {
+      background-color: white;
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #004d99;
+    }
+    .back {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .back a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Book Your Flight</h1>
+  </header>
+
+  <form>
+    <label>From:</label>
+    <input type="text" required>
+
+    <label>To:</label>
+    <input type="text" required>
+
+    <label>Travel Date:</label>
+    <input type="date" required>
+
+    <label>Class:</label>
+    <select>
+      <option>Economy</option>
+      <option>Business</option>
+      <option>First Class</option>
+    </select>
+
+    <label>Passenger Name:</label>
+    <input type="text" required>
+
+    <label>Email:</label>
+    <input type="email" required>
+
+    <button type="submit">Book Now</button>
+  </form>
+
+  <div class="back">
+    <a href="Airline.html">← Back to Main Page</a>
+  </div>
+
+</body>
+</html>
